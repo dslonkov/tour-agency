@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tours</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="site-container">
+    <header class="header">
+      <div class="header__nav-burger">
+        <span>
+          <a href="#"></a>
+        </span>
+      </div>
+      <nav class="header__nav">
+        <div class="selects">
+          <div class="country-sel">
+            <span>Страны</span>
+
+            <div class="country__menu">
+              <h4 class="country__menu-title">Южная Америка</h4>
+              <ul class="country__menu-list">
+                <li class="country__menu-item"><a href="#" class="country__menu-link">Аргентин</a></li>
+                <li class="country__menu-item"><a href="#" class="country__menu-link">Бразилия</a></li>
+                <li class="country__menu-item"><a href="#" class="country__menu-link">Перу</a></li>
+                <li class="country__menu-item"><a href="#" class="country__menu-link">Уругвай</a></li>
+                <li class="country__menu-item"><a href="#" class="country__menu-link">Чили</a></li>
+                <li class="country__menu-item"><a href="#" class="country__menu-link">Эквадор</a></li>
+              </ul>
+
+              <div class="country__menu-sub">Все туры на континенте</div>
+
+              <div class="all__tours">
+                <ul class="all__tours-list">
+                  <li class="all__tours-item"><a href="#" class="all__tours-link">Северная Америка</a></li>
+                  <li class="all__tours-item"><a href="#" class="all__tours-link">Арктика и Антарктика</a></li>
+                  <li class="all__tours-item"><a href="#" class="all__tours-link">Африка</a></li>
+                  <li class="all__tours-item"><a href="#" class="all__tours-link">Австралия и Океания</a></li>
+                  <li class="all__tours-item"><a href="#" class="all__tours-link">Европа</a></li>
+                  <li class="all__tours-item"><a href="#" class="all__tours-link">Россия</a></li>
+                  <li class="all__tours-item"><a href="#" class="all__tours-link">Азия</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="date-sel">
+            <span>Даты</span>
+          </div>
+    
+          <div class="type-sel">
+            <span>Тип путешествия</span>
+
+            <div class="type-menu">
+              <div class="type__sel-title">Тип путешестия</div>
+            
+              <ul class="type-list">
+                <li class="type-item"><a href="#" class="type-link">Активный</a></li>
+                <li class="type-item"><a href="#" class="type-link">Майские</a></li>
+                <li class="type-item"><a href="#" class="type-link">На авто</a></li>
+                <li class="type-item"><a href="#" class="type-link">На корабле</a></li>
+                <li class="type-item"><a href="#" class="type-link">Новый год</a></li>
+                <li class="type-item"><a href="#" class="type-link">Поход</a></li>
+                <li class="type-item"><a href="#" class="type-link">Серфинг</a></li>
+                <li class="type-item"><a href="#" class="type-link">Эксклюзив</a></li>
+                <li class="type-item"><a href="#" class="type-link">Экскурсионный</a></li>
+                <li class="type-item"><a href="#" class="type-link">Экспедиция</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button class="tour__search">НАЙТИ</button>
+
+        <ul class="menu">
+          <li class="menu-item"><a href="#" class="menu-link">ПУТЕШЕСТВИЯ</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">О НАС</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">ОТЗЫВЫ</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">БЛОГ</a></li>
+        </ul>
+    
+        <div class="header__nav-phone">
+          <a href="tel:88001234567" class="phone-link">8 (800) 123-45-67</a>
+    
+          <button class="tour__selection">ПОДБЕРИТЕ МНЕ ТУР</button>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="overlay"></div>
+    
+    
+    <main class="main">
+      <section class="hot__tours">
+        <div class="container">
+          <h2 class="hot__tours-title">
+            ГОРЯЩИЕ ТУРЫ
+          </h2>
+    
+          <ul class="hot__tours-list">
+            <li class="hot__tours-item animate__animated animate__flipInY infinite animate__delay-2s"><a class="hot__tours-link spain" href="#">Испания</a></li>
+            <li class="hot__tours-item animate__animated animate__flipInY infinite animate__delay-2s"><a class="hot__tours-link italy" href="#">Италия</a></li>
+            <li class="hot__tours-item animate__animated animate__flipInY infinite animate__delay-2s"><a class="hot__tours-link iceland" href="#">Исландия</a></li>
+            <li class="hot__tours-item animate__animated animate__flipInY infinite animate__delay-2s"><a class="hot__tours-link turkey" href="#">Турция</a></li>
+          </ul>
+    
+          <div class="hot__tours-cards">
+            <div class="cards_item">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/italy.jpg" alt="италия">
+    
+                <div class="image-price">
+                  <span>от 118 112 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Италия</p>
+    
+              <h3 class="cards__item-title">Под небом Тосканы</h3>
+    
+              <p class="cards__item-route">Сансеполькро — (Перуджа) — Ассизи — Губбио — (Сиена) —
+                Ла Верна — Ангиари — Монтерки — Ареццо — Кортона — (Пиенца) -
+                (Монтепульчано)
+              </p>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                27.04.19 - 04.05.19и еще 15 дат
+              </p>
+    
+              <div class="info-block">
+                <p class="cards__item-info">Авиаперелет включен!</p>
+              </div>
+            </div>
+    
+            <div class="cards_item">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/iceland.jpg" alt="исландия">
+    
+                <div class="image-price">
+                  <span>от 140 715 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Исландия</p>
+    
+              <h3 class="cards__item-title">Майские каникулы в Исландии</h3>
+    
+              <p class="cards__item-route">Рейкьявик — Тингвеллир — Гюдльфосс — Скафтафедль —
+                Сельяландсфосс — Скоугафосс — Йёкюльсаурлоун — Голубая Лагуна —
+                Снайфельсйёкутль — Arnarstapi — Рейкьявик
+              </p>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                27.04.19 - 04.05.19
+              </p>
+            </div>
+    
+            <div class="cards_item">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/turkey.jpg" alt="турция">
+    
+                <div class="image-price">
+                  <span>от 37 302 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Турция</p>
+    
+              <h3 class="cards__item-title">Открытие Турции</h3>
+    
+              <p class="cards__item-route">Стамбул — Анкара — Каппадокия — Конья —
+                Памуккале — Эфес — Кушадасы — Пергам — Ассос — Троя — Стамбул
+              </p>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                28.04.19 - 05.05.19и еще 3 даты
+              </p>
+            </div>
+    
+            <div class="cards_item card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/norway.jpg" alt="норвегия">
+    
+                <div class="image-price">
+                  <span>от 145 000 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Норвегия, Шпицберген</p>
+    
+              <h3 class="cards__item-title">От Свальбарда до Груманта</h3>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                27.04.19 - 04.05.19и еще 15 дат
+              </p>
+    
+              <div class="info-block">
+                <p class="cards__item-info">Гарантированный тур!</p>
+              </div>
+            </div>
+    
+            <div class="cards_item card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/italy.jpg" alt="италия">
+    
+                <div class="image-price">
+                  <span>от 118 112 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Италия</p>
+    
+              <h3 class="cards__item-title">Под небом Тосканы</h3>
+    
+              <p class="cards__item-route">Сансеполькро — (Перуджа) — Ассизи — Губбио — (Сиена) —
+                Ла Верна — Ангиари — Монтерки — Ареццо — Кортона — (Пиенца) -
+                (Монтепульчано)
+              </p>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                27.04.19 - 04.05.19и еще 15 дат
+              </p>
+    
+              <div class="info-block">
+                <p class="cards__item-info">Авиаперелет включен!</p>
+              </div>
+            </div>
+    
+            <div class="cards_item card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/iceland.jpg" alt="исландия">
+    
+                <div class="image-price">
+                  <span>от 140 715 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Исландия</p>
+    
+              <h3 class="cards__item-title">Майские каникулы в Исландии</h3>
+    
+              <p class="cards__item-route">Рейкьявик — Тингвеллир — Гюдльфосс — Скафтафедль —
+                Сельяландсфосс — Скоугафосс — Йёкюльсаурлоун — Голубая Лагуна —
+                Снайфельсйёкутль — Arnarstapi — Рейкьявик
+              </p>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                27.04.19 - 04.05.19
+              </p>
+            </div>
+    
+            <div class="cards_item card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/turkey.jpg" alt="турция">
+    
+                <div class="image-price">
+                  <span>от 37 302 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Турция</p>
+    
+              <h3 class="cards__item-title">Открытие Турции</h3>
+    
+              <p class="cards__item-route">Стамбул — Анкара — Каппадокия — Конья —
+                Памуккале — Эфес — Кушадасы — Пергам — Ассос — Троя — Стамбул
+              </p>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                28.04.19 - 05.05.19и еще 3 даты
+              </p>
+            </div>
+    
+            <div class="cards_item card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/norway.jpg" alt="норвегия">
+    
+                <div class="image-price">
+                  <span>от 145 000 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Норвегия, Шпицберген</p>
+    
+              <h3 class="cards__item-title">От Свальбарда до Груманта</h3>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                27.04.19 - 04.05.19и еще 15 дат
+              </p>
+    
+              <div class="info-block">
+                <p class="cards__item-info">Гарантированный тур!</p>
+              </div>
+            </div>
+    
+            <div class="cards_item card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/italy.jpg" alt="италия">
+    
+                <div class="image-price">
+                  <span>от 118 112 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Италия</p>
+    
+              <h3 class="cards__item-title">Под небом Тосканы</h3>
+    
+              <p class="cards__item-route">Сансеполькро — (Перуджа) — Ассизи — Губбио — (Сиена) —
+                Ла Верна — Ангиари — Монтерки — Ареццо — Кортона — (Пиенца) -
+                (Монтепульчано)
+              </p>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                27.04.19 - 04.05.19и еще 15 дат
+              </p>
+    
+              <div class="info-block">
+                <p class="cards__item-info">Авиаперелет включен!</p>
+              </div>
+            </div>
+    
+            <div class="cards_item card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/iceland.jpg" alt="исландия">
+    
+                <div class="image-price">
+                  <span>от 140 715 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Исландия</p>
+    
+              <h3 class="cards__item-title">Майские каникулы в Исландии</h3>
+    
+              <p class="cards__item-route">Рейкьявик — Тингвеллир — Гюдльфосс — Скафтафедль —
+                Сельяландсфосс — Скоугафосс — Йёкюльсаурлоун — Голубая Лагуна —
+                Снайфельсйёкутль — Arnarstapi — Рейкьявик
+              </p>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                27.04.19 - 04.05.19
+              </p>
+            </div>
+    
+            <div class="cards_item card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/turkey.jpg" alt="турция">
+    
+                <div class="image-price">
+                  <span>от 37 302 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Турция</p>
+    
+              <h3 class="cards__item-title">Открытие Турции</h3>
+    
+              <p class="cards__item-route">Стамбул — Анкара — Каппадокия — Конья —
+                Памуккале — Эфес — Кушадасы — Пергам — Ассос — Троя — Стамбул
+              </p>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                28.04.19 - 05.05.19и еще 3 даты
+              </p>
+            </div>
+    
+            <div class="cards_item card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/norway.jpg" alt="норвегия">
+    
+                <div class="image-price">
+                  <span>от 145 000 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Норвегия, Шпицберген</p>
+    
+              <h3 class="cards__item-title">От Свальбарда до Груманта</h3>
+    
+              <p class="cards__item-duration">
+                8 дней / 7 ночей Русский язык
+                27.04.19 - 04.05.19и еще 15 дат
+              </p>
+    
+              <div class="info-block">
+                <p class="cards__item-info">Гарантированный тур!</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="load-btn animate__animated animate__shakeX animate__infinite animate__delay-2s">ЗАГРУЗИТЬ ЕЩЁ</button>
+    
+    
+    
+        </div>
+      </section>
+    
+      <section class="popular__tours">
+        <div class="container">
+          <h2 class="popular__tours-title">Популярные туры</h2>
+    
+          <div class="popular__tours-cards">
+            <div class="cards-item">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/turkey.jpg" alt="турция">
+    
+                <div class="image-price">
+                  <span>от 37 302 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Турция</p>
+    
+              <h3 class="cards__item-title">Открытие Турции</h3>
+            </div>
+    
+            <div class="cards-item">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/norway.jpg" alt="норвегия">
+    
+                <div class="image-price">
+                  <span>от 145 000 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Норвегия, Шпицберген</p>
+    
+              <h3 class="cards__item-title">От Свальбарда до Груманта</h3>
+            </div>
+    
+            <div class="cards-item pop-card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/turkey.jpg" alt="турция">
+    
+                <div class="image-price">
+                  <span>от 37 302 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Турция</p>
+    
+              <h3 class="cards__item-title">Открытие Турции</h3>
+            </div>
+    
+            <div class="cards-item pop-card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/norway.jpg" alt="норвегия">
+    
+                <div class="image-price">
+                  <span>от 145 000 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Норвегия, Шпицберген</p>
+    
+              <h3 class="cards__item-title">От Свальбарда до Груманта</h3>
+            </div>
+    
+            <div class="cards-item pop-card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/turkey.jpg" alt="турция">
+    
+                <div class="image-price">
+                  <span>от 37 302 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Турция</p>
+    
+              <h3 class="cards__item-title">Открытие Турции</h3>
+            </div>
+    
+            <div class="cards-item pop-card-hide">
+              <div class="image-block">
+                <img class="cards__item-img" src="./img/norway.jpg" alt="норвегия">
+    
+                <div class="image-price">
+                  <span>от 145 000 &#8381;</span>
+                </div>
+              </div>
+    
+              <p class="cards__item-country">Норвегия, Шпицберген</p>
+    
+              <h3 class="cards__item-title">От Свальбарда до Груманта</h3>
+            </div>
+            <button class="arrow-next"></button>
+          </div>
+        </div>
+      </section>
+    
+      <section class="section__form">
+        <h2 class="section__form-title">Заявка на подбор путешествия</h2>
+    
+        <form class="form" action="#">
+          <div class="about-title">НЕМНОГО О ВАС</div>
+    
+          <div class="form__client">
+            <p class="form__name">
+              <label class="form__name-text"><span>ИМЯ *</span>
+                <input class="form__name-input" type="text">
+              </label>
+            </p>
+    
+            <p class="form__phone">
+              <label class="form__phone-text"><span>ТЕЛЕФОН</span>
+                <input class="form__phone-input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="+7___ ___ __ __">
+              </label>
+            </p>
+          </div>
+    
+          <div class="about-title">О ПУТЕШЕСТВИИ</div>
+    
+          <div class="travel__info">
+            <p class="form__country">
+              <label class="form__country-text"><span>КУДА И КОГДА ХОТИТЕ ПОЕХАТЬ? *</span>
+                <input class="form__country-input" type="text" placeholder="Континент, страна или город">
+              </label>
+            </p>
+    
+            <p class="form__date">
+              <label class="form__date-text"><span>КОГДА?</span>
+                <input class="form__date-input" type="text" placeholder="Даты или временной  интервал">
+              </label>
+            </p>
+          </div>
+    
+          <div class="checkbox__container">
+            <div class="callback__info">
+              <div class="about-title">УДОБНЫЙ СПОСОБ СВЯЗИ</div>
+    
+              <div class="form__callback">
+    
+                <label class="callback-text"><span>VIBER</span>
+                  <input type="checkbox">
+                </label>
+    
+    
+    
+                <label class="callback-text"><span>WHATSAPP</span>
+                  <input type="checkbox">
+                </label>
+    
+    
+    
+                <label class="callback-text"><span>ПОЧТА</span>
+                  <input type="checkbox">
+                </label>
+    
+    
+    
+                <label class="callback-text"><span>ТЕЛЕФОН</span>
+                  <input type="checkbox">
+                </label>
+    
+              </div>
+            </div>
+    
+            <div class="about__info">
+              <div class="about-title">ОТКУДА УЗНАЛИ О НАС</div>
+    
+              <div class="form__about">
+    
+                <label class="callback-text"><span>ИНТЕРНЕТ</span>
+                  <input type="checkbox">
+                </label>
+    
+    
+    
+                <label class="callback-text friends"><span class="friends-span">РЕКОМЕНДОВАЛИ
+                    ДРУЗЬЯ</span>
+                  <input type="checkbox">
+                </label>
+    
+    
+    
+                <label class="callback-text"><span>СОЦ. СЕТИ</span>
+                  <input type="checkbox">
+                </label>
+    
+    
+    
+                <label class="callback-text done"><span class="done-span">УЖЕ ЕЗДИЛ</span>
+                  <input type="checkbox">
+                </label>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="ad__info">
+            <div class="form__ad">
+              <label class="form__ad-text" for="get">
+                <input type="checkbox" class="ad" id="get">
+                <span class="ad-confirm">Получать свежие предложения по электронной почте</span>
+                <span class="ad-text">Каждую неделю мы делаем для вас обзор лучших экспедиций, статей и лайфхаков для
+                  путешественников. Если вдруг вам не
+                  понравится, вы сможете отписаться в любой момент.
+                </span>
+              </label>
+    
+              <label class="form__ad-text accept-checkbox" for="confirm">
+                <input type="checkbox" class="ad" id="confirm">
+                <span class="ad-confirm">С обработкой своих персональных данных согласен. *</span>
+                <span class="ad-text">Отправляя заявку я подтверждаю согласие с условиями Пользовательского соглашения
+                </span>
+              </label>
+
+              <div class="accept">
+                <p class="accept-text">Подтвердите согласие</p>
+                <div class="accept-btn">ОК</div>
+              </div>
+    
+              <div class="subtext">
+                <span><span class="star">*</span> Поля, которые надо обязательно заполнить</span>
+              </div>
+    
+              <button type="submit" class="form-btn">ОТПРАВИТЬ</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="tel:88001234567" class="footer__container-phone1">8 (800) 123-45-67</a>
+        <a href="tel:88001234567" class="footer__container-phone2">8 (800) 123-45-67</a>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
